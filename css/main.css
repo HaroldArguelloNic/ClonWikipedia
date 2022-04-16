@@ -1,0 +1,61 @@
+root {
+    --bluetext: #36c;
+    --textcontent: -apple-system, sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+header {
+    text-align: center;
+    font-family: serif;
+}
+main .logo {
+    width: 494px;
+    display: grid;
+    grid-template-columns: 7px repeat(8, 60px) 7px;
+    grid-template-rows: repeat(5, 80px);
+    margin: 0 auto;
+    text-align: center;
+}
+main .logo .globo {
+   grid-row: 2;
+   grid-column: 4;
+}
+main section .logo a {
+    color:var(--bluetext);
+    font-family: var(--textcontent);
+    font-size: 13px;
+    text-decoration: none;
+}
+main .logo .esp {
+   grid-column: 3 /span 3;
+}
+main .logo .eng {
+    grid-column: 6 /span 3;
+}
+main .logo .chino {
+    grid-column: 1/span 3;
+}
+main .logo .aleman {
+    grid-column: 8;
+}
+main .logo .ruso {
+    grid-column: 2;
+}
+main .logo .frances {
+    grid-column: 9;
+}
+main .logo .italiano {
+    grid-column: 3;
+}
+main .logo .japones {
+    grid-column: 8;
+}
+main .logo .portugues {
+    grid-column: 4;
+}
+main .logo .polaco {
+    grid-column: 7;
+}
