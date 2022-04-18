@@ -113,7 +113,7 @@ main section.selector hr{
 main section.selector a{
     display: flex;
     height: 30px;
-    border: 1px solid lightblue;
+    border: 1px solid var(--bluetext);
     width: 250px;
     margin: 0 20px;
     color: var(--bluetext);
@@ -121,27 +121,27 @@ main section.selector a{
     background-color: aliceblue;
     justify-content: center;
     align-items: center;
+    border-radius: 5px;
 }
 main section.content {
-    width: 1200px;
+    width: vw100;
     display: flex;
-    border-top: 1px solid lightblue;
-    margin:0 auto;
+    border-top: 1px solid aliceblue;
+    margin:0 50px;
 }
 main section.content .sub-content1 {
-    width: 25%;
-    height: 300px;
+    width: 30%;
+    height: 100%;
     box-sizing: border-box;
-    background-color: aqua;
     margin-top: 20px;
 }
 main section.sub-content2 {
-    width: 75%;
+    width: 70%;
     margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: repeat(3, 33%);
     grid-template-rows: repeat(4, 100px);
-    margin-left: 2%;
+    margin-left: 4%;
 }
 main section.sub-content2>section {
     display: flex;
@@ -159,4 +159,40 @@ main section.sub-content2>section>div>a{
 }
 main section.sub-content2>section>div>p{
     font-size: 12px;
+}
+aside.sub-content1 article{
+    display: flex;
+    padding: 0 10px 15px;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+aside.sub-content1 img{
+    width: 35px;
+    margin-right: 15px;
+}
+aside.sub-content1 h3{
+    color: var(--bluetext);
+    font-size: 16px;
+}
+aside.sub-content1 .app img {
+    margin-top: 15px;
+    width: 80px;
+    height: 35;
+}
+aside.sub-content1 article.offer {
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 15px;
+}
+footer {
+    display: flex;
+    color: var(--bluetext);
+    justify-content: center;
+}
+footer ul li {
+    display: inline-flex;
+    margin-left: 30px;
+}
+footer ul li a{
+    text-decoration: none;
 }
